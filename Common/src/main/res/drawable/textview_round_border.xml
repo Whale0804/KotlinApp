@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- view背景色 -->
+    <solid android:color="@color/transparent" />
+    <!-- 边框颜色 宽度 -->
+    <stroke
+            android:width="1dip"
+            android:color="@color/common_yellow" />
+    <!-- 边框圆角 -->
+    <corners
+            android:radius="4dp"
+    />
+
+</shape>

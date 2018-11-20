@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                xmlns:circleimageview="http://schemas.android.com/apk/res-auto"
+                android:background="?attr/colorPrimary"
+                android:elevation="8dp"
+                android:gravity="bottom">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mAvatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/user_default_avatar"
+            circleimageview:civ_border_color="@android:color/white"
+            circleimageview:civ_border_overlay="false"
+            circleimageview:civ_border_width="2dp"
+            circleimageview:civ_fill_color="@android:color/holo_blue_light"
+
+    />
+
+    <TextView
+            android:id="@+id/mUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/mMail"
+            android:text="@string/login_text"
+            android:layout_centerInParent="true"
+            android:textColor="#FFF"
+            android:textSize="14sp"/>
+
+    <TextView
+            android:id="@+id/mMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="#FFF"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:layout_marginBottom="10dp"
+            android:textSize="14sp"/>
+
+</RelativeLayout>

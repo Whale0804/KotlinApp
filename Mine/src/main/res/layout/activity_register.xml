@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:circleimageview="http://schemas.android.com/apk/res-auto"
+                android:background="@color/common_yellow"
+                tools:context=".presenter.activity.RegisterActivity"
+                android:id="@+id/mRegisterLayout">
+
+    <cn.githink.common.widgets.LoginTitle
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:id="@+id/mMainTitle"
+            app:mSignInBtn="Sign in"/>
+
+    <LinearLayout
+            android:id="@+id/login_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mMainTitle"
+            android:orientation="vertical" >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/nav_icon"
+                circleimageview:civ_border_color="@android:color/widget_edittext_dark"
+                circleimageview:civ_border_overlay="false"
+                circleimageview:civ_border_width="2dp"
+                circleimageview:civ_fill_color="@android:color/holo_blue_light"
+
+        />
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:text="KotlinX"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="打造最好用的Android Mvp架构"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/login_logo">
+
+        <include
+                android:id="@+id/input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="220dip"
+                layout="@layout/input_register_layout" />
+
+        <TextView
+                android:id="@+id/mRegisterBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/text_bg"
+                android:gravity="center"
+                android:paddingBottom="3dip"
+                android:paddingLeft="40dip"
+                android:paddingRight="40dip"
+                android:paddingTop="3dip"
+                android:text="注册"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

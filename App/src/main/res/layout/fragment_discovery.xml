@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".presenter.fragment.DiscoveryFragment">
+
+    <cn.githink.common.widgets.AppToolBar
+            android:id="@+id/mAppToolBar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textFontWeight="500"
+            android:textSize="24dp"
+            android:text="发现"
+    />
+
+</FrameLayout>
